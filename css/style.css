@@ -592,12 +592,82 @@ only screen and (min-width: 576px) and (max-width: 767px),
     background-position: 112%;  */
 }
 
+#fliers2{
+	display: none;
+}
+.phone{
+	display: none;
+}
+
+
 @media (max-width: 576px),
-only screen and (min-width: 576px) and (max-width: 767px) {
+only screen and (min-width: 300px) and (max-width: 767px) {
 	.hero__section {
-		padding-top: 200px;
-		height: 900px;
+		padding-top: 180px;
+		height: 0px;
 	}
+	#fliers{
+		display: none;
+	}
+	#fliers2{
+		display: inline;
+	}
+
+	.about__section { 
+		margin-top: -71px !important;
+	}
+	.phone{
+		display: inline !important;
+	}
+	.not-phone{
+		display: none  !important;
+	}
+
+	.show__item .show__location i {
+		color: #e934ff;
+		margin-right: 1px !important;
+		margin-left: 10px !important;
+		
+	}
+	
+	.show__item .show__title {
+		width: 60%;
+		padding-left: 70px;
+		padding-top: 0% !important;
+		/* padding-right: 20px; */
+	}
+
+	.show__item .show__location {
+		width: 27%;
+		padding-top: 0% !important;
+	}
+
+	.photo-title{
+		font-family: "Satisfy", cursive;
+    color: #e934ff;
+    font-size: 30px;
+    margin-bottom: 5px;
+	margin-left: 28px;
+	}
+
+	.hero__slider {
+		padding: 32px !important;
+		margin-left: -8px !important;
+		margin-top: -29px !important;
+		max-width: 400px !important;
+	}
+
+	.about__text p {
+		font-size: 12px;
+	}
+
+	.owl-nav{
+		display: none;
+	}
+	
+	
+
+	
 }
 
 .hero__slider {
@@ -606,7 +676,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 @media (max-width: 576px) {
 	.hero__slider .owl-nav {
-		text-align: center;
+		margin-top: -88px !important;
+	}
+	.owl-item .album__card img {
+		max-width: 88% !important;
 	}
 }
 
@@ -1817,7 +1890,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 576px) {
 	.show__item {
-		display: block;
 		text-align: center;
 	}
 }
@@ -1897,7 +1969,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	.show__item .show__title {
 		width: auto;
 		display: block;
-		padding-left: 0;
+		/* padding-left: 0; */
 	}
 }
 
